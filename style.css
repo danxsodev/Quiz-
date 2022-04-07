@@ -13,10 +13,13 @@ body {
     height: 50px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
+    align-items: center;
+}
+#nav {
+    display: flex;
 }
 .perguntas {
     color: rgb(255, 255, 255);
-    list-style: decimal;
 }
 .respostas {
     list-style: lower-alpha;

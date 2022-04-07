@@ -11,8 +11,8 @@
 
 <body>
     <header id="AreaMenu">
-        <div class= "logo"></div>
             <nav id="nav">
+                <div class= "logo"></div>
                 <h1>Quiz do Corinthians</h1>
             </nav>
     </header>
@@ -22,11 +22,12 @@
             <fieldset>
                 <li>Quantos títulos Paulistas tem o Corinthians? 
                     <ol class="respostas">
-                        <li class="r1" id="certo" onclick="window.alert('Acertou')">30 Paulistas</li>
-                        <li class="r2" onclick="window.alert('Errou')">24 Paulistas</li>
-                        <li class="r3" onclick="window.alert('Errou')">31 Paulistas</li>
-                        <li class="r4" onclick="window.alert('Errou')">23 Paulistas</li>
+                        <li class="r1" id="certo" onclick="clicar()">30 Paulistas</li>
+                        <li class="r2" onclick="errado()">24 Paulistas</li>
+                        <li class="r3" onclick="errado()">31 Paulistas</li>
+                        <li class="r4" onclick="errado()">23 Paulistas</li>
                     </ol>
+                    <input type="box" id="caixinha" disabled>
                 </li>
             </fieldset>
             <br/>
@@ -34,58 +35,70 @@
             <fieldset>
                 <li>Quantos títulos Brasileiros tem o Corinthians? 
                     <ol class="respostas">
-                        <li class="r1" onclick="window.alert('Errou')">4 Brasileiros</li>
-                        <li class="r2" onclick="window.alert('Errou')">5 Brasileiros</li>
-                        <li class="r3" id="certo" onclick="window.alert('Acertou')">7 Brasileiros</li>
-                        <li class="r4" onclick="window.alert('Errou')">6 Brasileiros</li>
+                        <li class="r1" onclick="errado()">4 Brasileiros</li>
+                        <li class="r2" onclick="errado()">5 Brasileiros</li>
+                        <li class="r3" id="certo" onclick="clicar()">7 Brasileiros</li>
+                        <li class="r4" onclick="errado()">6 Brasileiros</li>
+                        
                     </ol>
+                    <input type="box" id="caixinha" disabled>
                 </li>
             </fieldset>
             <br/>
             <fieldset>
                 <li>Quantos títulos da CONMEBOL Libertadores tem o Corinthians? 
                     <ol class="respostas">
-                        <li class="r1" onclick="window.alert('Errou')">2 Libertadores</li>
-                        <li class="r2" id="certo" onclick="window.alert('Acertou')">1 Libertadores</li>
-                        <li class="r3" onclick="window.alert('Errou')">0 Libertadores</li>
-                        <li class="r4" onclick="window.alert('Errou')">3 Libertadores</li>
+                        <li class="r1" onclick="errado()">2 Libertadores</li>
+                        <li class="r2" id="certo" onclick="clicar()">1 Libertadores</li>
+                        <li class="r3" onclick="errado()">0 Libertadores</li>
+                        <li class="r4" onclick="errado()">3 Libertadores</li>
+                        
                     </ol>
+                    <input type="box" id="caixinha" disabled>
                 </li>
             </fieldset>
             <br/>
             <fieldset>
                 <li>Quantos títulos CONMEBOL Recopa tem o Corinthians? 
                     <ol class="respostas">
-                        <li class="r1" onclick="window.alert('Errou')">0 Recopa</li>
-                        <li class="r2" onclick="window.alert('Errou')">2 Recopa</li>
-                        <li class="r3" onclick="window.alert('Errou')">3 Recopa</li>
-                        <li class="r4" id="certo" onclick="window.alert('Acertou')">1 Recopa</li>
+                        <li class="r1" onclick="errado()">0 Recopa</li>
+                        <li class="r2" onclick="errado()">2 Recopa</li>
+                        <li class="r3" onclick="errado()">3 Recopa</li>
+                        <li class="r4" id="certo" onclick="clicar()">1 Recopa</li>
+                        
                     </ol>
+                    <input type="box" id="caixinha" disabled>
                 </li>
             </fieldset>
             <br/>
             <fieldset>
                 <li>Quantos títulos Mundial de Clubes tem o Corinthians? 
                     <ol class="respostas">
-                        <li class="r1" onclick="window.alert('Errou')">1 Mundial</li>
-                        <li class="r2" id="certo" onclick="window.alert('Acertou')">2 Mundiais</li>
-                        <li id="r3" onclick="window.alert('Errou')">3 Mundiais</li>
-                        <li id="r4" onclick="window.alert('Errou')">0 Mundial</li>
+                        <li class="r1" onclick="errado()">1 Mundial</li>
+                        <li class="r2" id="certo" onclick="clicar()">2 Mundiais</li>
+                        <li id="r3" onclick="errado()">3 Mundiais</li>
+                        <li id="r4" onclick="errado()">0 Mundial</li>
                     </ol>
+                    <input type="box" id="caixinha" disabled>
                 </li>
             </fieldset>
             <br/>
             <fieldset>
                 <li>Quantos títulos da Copa do Brasil tem o Corinthians? 
                     <ol class="respostas">
-                        <li class="r1" onclick="window.alert('Errou')"> 2 Copas do Brasil</li>
-                        <li class="r2" onclick="window.alert('Errou')">1 Copa do Brasil</li>
-                        <li class="r3" id="certo" onclick="window.alert('Acertou')">3 Copas do Brasil</li>
-                        <li class="r4" onclick="window.alert('Errou')">4 Copas do Brasil</li>
+                        <li class="r1" onclick="errado()"> 2 Copas do Brasil</li>
+                        <li class="r2" onclick="errado()">1 Copa do Brasil</li>
+                        <li class="r3" id="certo" onclick="clicar()">3 Copas do Brasil</li>
+                        <li class="r4" onclick="errado()">4 Copas do Brasil</li>
                     </ol>
+                    <input type="box" id="caixinha" disabled>
                 </li>
             </fieldset>
         </ol>
-    </main>    
+    </main>  
+    <script src="js.js"></script> 
 </body>
 </html>
+<!----aprender if, else, else if com js;
+function;
+evento onclick.> 
